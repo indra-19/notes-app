@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  background-color: #15172d;
+}
+
+.note {
+  width: 100vw;
+  max-width: 600px;
+  box-shadow: #000 0px 1px 4px;
+  min-height: 100vh;
+}
+
+.topbar {
+  display: flex;
+  padding: 15px;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0;
+  background-color: #15172d;
+  justify-content: right;
+}
+
+.box {
+  display: flex;
+  padding: 0 15px 15px 15px;
+  justify-content: right;
+}
+
+.add {
+  width: 100%;
+  border: 2px solid #cf4147;
+  border-radius: 3px;
+  height: 41px;
+  background-color: transparent;
+  font-size: 23px;
+  padding: 0 57px 0 15px;
+  color: #eae2b6;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+  position: absolute;
+  border-radius: 3px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  background-color: #cf4147;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #eae2b6;
 }
 
-.App-link {
-  color: #61dafb;
+.text {
+  background-color: #cf4147;
+  border-radius: 3px;
+  margin: 0;
+  padding: 8px 57px 9px 15px;
+  font-size: 23px;
+  font-family: 'Montserrat', sans-serif;
+  color: #eae2b6;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: #757575;
+  font-size: 23px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
